@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/fontello.woff2?53658252') format('woff2'),
+       url('../fonts/fontello.woff?53658252') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  }
+ 
+.icon-envelope:before { content: '\e800'; } 
+.icon-phone-call:before { content: '\e801'; }
+.icon-plug:before { content: '\e802'; }
+.icon-paper-plane:before { content: '\e803'; } 
+
+body {
+  font-family: roboto, sans-serif;
+}
+ 
+.gridChildOne > p {
+  color: grey;
+}
+
+.gridChildTwo > p {
+  color: white;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+a:hover {
+  color: black;
+}
+
+.pop-modal:hover {
+  color: white;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+vertical-align: middle;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  }
+  
+.gridChildOne {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-gap:5%;
+    margin: 0;
+    }
+
+.gridChildTwo {
+    display: grid;
+    grid-template-rows: 65% 32%;
+    grid-gap: 3%;
+    margin: 0;
+    background-color: black;
+      }
+
+  .grid > div {
+  padding: .5em;
+  text-align: justify;
+  }
